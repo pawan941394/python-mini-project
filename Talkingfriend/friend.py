@@ -1,0 +1,13 @@
+import pyttsx3
+friend = pyttsx3.init()
+rate =friend.getProperty('rate')
+print (rate)
+friend.setProperty('rate', 110)
+voices = friend.getProperty('voices')
+friend.setProperty('voice', voices[1].id)
+volume = friend.getProperty('volume')
+print (volume)
+friend.setProperty('volume',1.0)
+friend.say ("Click Open Zoom Meetings on the dialog shown by your browser")
+friend.runAndWait()
+print(friend.runAndWait())
